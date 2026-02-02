@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #6f4e37, #2b1b14);
+}
+
+main{
+  position: relative;
+  width: 130vh;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 20px 40px rgba(0,0,0,0.35);
+}
+
+.player{
+  padding: 70px;
+  text-align: center;
+}
+
+.player.player--0{
+  background: #f6efe6;
+}
+
+.player.player--1{
+  background: #e6d6c6;
+}
+
+.name{
+  font-size: 40px;
+  font-weight: 500;
+  color: #3b2a22;
+}
+
+.score{
+  font-size: 60px;
+  margin-top: 10px;
+  font-weight: 450;
+  color: #8b5e3c;
+}
+
+.current{
+  width: 160px;
+  margin: 140px auto 0 auto;
+  padding: 25px;
+  background-color: #8b5e3c;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.current-label{
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.current-score{
+  font-size: 30px;
+  margin-top: 5px;
+  font-weight: 380;
+}
+
+.dice{
+  position: absolute;
+  left: 50%;
+  margin-top: 19%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 18px 30px rgba(0,0,0,0.35);
+}
+
+.btn{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  border: 1px solid rgba(59,42,34,0.15);
+  padding: 10px 22px;
+  border-radius: 25px;
+  background:  rgba(255,255,255,0.9);
+  color: #3b2a22;
+  font-size: 18px;
+}
+
+.btn--new{
+  top: 30px;
+}
+
+.btn--roll{
+  top: 63%;
+}
+
+.btn--hold{
+  top: 75%;
+}
